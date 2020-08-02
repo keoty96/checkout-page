@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="style.css" />
+  <title>CheckOut Page</title>
+</head>
+
+<body>
+  <header>
+    <h1>Checkout</h1>
+  </header>
+
+  <!-- product and form section -->
+  <section>
+    <form action="/">
+      <div class="form-cont">
+        <!-- contact container -->
+        <div class="contact-info">
+          <h3 class="cont-title">Contact Information</h3>
+          <!-- email -->
+          <label for="email">Email</label>
+          <div class="cont-icon">
+            <span class="material-icons"> email </span>
+            <input type="text" class="input-field" id="email" placeholder="Enter your email..." required />
+          </div>
+          <!-- phone -->
+          <label for="phone">Phone</label>
+          <div class="cont-icon">
+            <span class="material-icons"> phone </span>
+            <input type="text" class="input-field" id="phone" placeholder="Enter your phone..." required />
+          </div>
+        </div>
+
+        <!-- SHIPPING ADDRES CONTAINER -->
+        <div class="ship-add-cont">
+          <!-- first shipping-address container -->
+          <div class="ship-add-fst">
+            <h3 class="cont-title">Shipping Address</h3>
+            <!-- fullname -->
+            <label>Full name</label>
+            <div class="cont-icon">
+              <span class="material-icons">person</span>
+              <input type="text" id="name" class="input-field" placeholder="Enter full name..." required>
+            </div>
+            <!-- address -->
+            <label>Address</label>
+            <div class="cont-icon">
+              <span class="material-icons">house</span>
+              <input type="text" id="address" class="input-field" placeholder="Your Address..." required>
+            </div>
+            <!-- city -->
+            <label>City</label>
+            <div class="cont-icon">
+              <span class="material-icons">location_city</span>
+              <input type="text" id="city" class="input-field" placeholder="Your city..." required>
+            </div>
+          </div>
+
+          <!-- second shipping-address container -->
+          <div class="ship-add-snd">
+            <!-- country -->
+            <div class="count-code">
+              <label>Country</label>
+              <div class="cont-icon">
+                <span class="material-icons">location_city</span>
+                <select name="country" class="input-field">
+                  <option value="PAN">Panamá</option>
+                  <option value="CR">Costa Rica</option>
+                  <option value="COL">Colombia</option>
+                  <option value="ECU">Ecuador</option>
+                </select>
+              </div>
+            </div>
+            <!-- postal code -->
+            <div class="postal-code">
+              <label>Postal Code</label>
+              <div class="cont-icon">
+                <span class="material-icons">markunread_mailbox </span>
+                <input type="text" id="code" class="input-field" placeholder="Your postal code..." required>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- checkbox container -->
+        <div class="checkbox">
+          <input type="checkbox" name="" id="" class="check-field">
+          <label for="">Save this information for the next</label>
+        </div>
+
+        <!-- button container -->
+        <div class="sub-btn-cont">
+          <input class="sub-btn" type="submit" value="Continue">
+        </div>
+
+      </div>
+    </form>
+
+
+    <!-- product section -->
+    <div id="product-sect">
+      <!-- first product -->
+      <div class="prod-cont">
+
+        <img src="img/photo1.png" alt="bag">
+
+        <!-- product information -->
+        <div class="prod-info">
+          <h3>Vintage Backpack</h3>
+          <!-- prices -->
+          <div class="prod-price">
+            <p id="bag-price" class="disc-price">$54.99</p>
+            <p class="real-price">$94.99</p>
+          </div>
+          <!-- product amount -->
+          <div class="prod-amount">
+            <button class="btn-minus">-</button>
+            <p id="bag-amount" class="item-amount">1</p>
+            <button class="btn-plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- second product -->
+      <div class="prod-cont">
+        <img src="img/photo2.png" alt="bag">
+        <!-- product information -->
+        <div class="prod-info">
+          <h3>Levi Shoes</h3>
+          <!-- prices -->
+          <div class="prod-price">
+            <p id="shoe-price" class="disc-price">$74.99 </p>
+            <p class="real-price">$124.99</p>
+          </div>
+          <!-- product amount -->
+          <div class="prod-amount">
+            <button class="btn-minus">-</button>
+            <p id="shoe-amount" class="item-amount">1</p>
+            <button class="btn-plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- total amount -->
+      <div class="total-amount">
+        <table>
+          <tr>
+            <th>Shipping</th>
+            <th>$19</th>
+          </tr>
+          <tr>
+            <th>Total</th>
+            <th>$148.98</th>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+  </section>
+
+
+</body>
+
+</html>

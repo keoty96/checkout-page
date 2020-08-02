@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Mukta', sans-serif;
+  color: rgb(44, 43, 43);
+}
+
+header{
+  padding: 20px;
+}
+
+img{
+  /* width: calc(25% - 5px);
+  height: calc(33.333% - 5px); */
+  width: calc(40% - 10px);
+  height: calc(40% - 10px);
+  border-radius: 20px;
+}
+
+/* form and product section */
+section{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+form{
+  margin: 5px;
+}
+
+table{
+  width: 100%;
+  text-align: left;
+}
+
+th, td {
+  border-top: 1px solid rgb(131, 131, 131);
+}
+
+/* form container */
+.form-cont{
+  width: 100%;
+  height: 100%;
+  padding: 30px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* contact and shipping container */
+.ship-add-cont{
+  padding-top: 30px;
+}
+
+/* button container */
+.sub-btn-cont{
+  padding-top: 10px;
+  margin-left: auto;
+}
+
+/* style of inputs and select */
+.input-field, select {
+  width: 100%;
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+   
+/* style of the checkbox */
+.check-field{
+  margin: 0 20px
+}
+
+/* style of icons */
+.cont-icon span {
+  position: absolute;
+}
+
+.material-icons {
+  padding: 10px;
+  min-width: 40px;
+}
+
+.ship-add-snd{
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-btn{
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(255, 144, 40);
+  font-size: medium;
+}
+
+/* product section */
+#product-sect{
+  padding: 30px 15px;
+  margin: 0 10px;
+  background-color: rgb(224, 224, 224);
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+}
+
+.prod-cont, .prod-price, .prod-amount{
+  display: flex;
+}
+
+/* product container */
+.prod-cont{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* product info container */
+.prod-info{
+  width:50%;
+  height: 50%;
+  padding: 0;
+  margin:0;
+}
+
+/* product amount container */
+.prod-amount{
+  /* height: 10%; */
+  margin-top: 20px;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+  border: solid 1px gray
+}
+
+/* product price container */
+.prod-price{
+  align-items: baseline;
+  width: 25%;
+}
+
+/* button minus $ plus style */
+.btn-minus, .btn-plus{
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(199, 194, 194);
+}
+
+/* product real price */
+.real-price{
+  text-decoration: line-through;
+  text-indent: 20px;
+}
+
+/* product discount price */
+.disc-price{
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(255, 142, 13);
+}
+
+/* amount of a product style */
+.item-amount, th{
+  font-size: 20px;
+}
+
+/* total amount container */
+.total-amount{
+  padding-top: 40px;
+}
+
+/* media queries */
+@media only screen and (min-width: 800px){
+
+  header{
+    text-align: center;
+  }
+
+  section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #product-sect{
+    height: 100%;
+  }
+
+ .prod-cont{
+    height: auto;
+    width: auto;
+  }
+
+}
