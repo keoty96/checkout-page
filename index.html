@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="style.css" />
   <title>CheckOut Page</title>
 </head>
@@ -120,8 +119,8 @@
           <!-- product amount -->
           <div class="prod-amount">
             <button class="btn-minus">-</button>
-            <p id="bag-amount" class="item-amount">1</p>
-            <button class="btn-plus">+</button>
+            <p id="bag-amount" class="item-amount">0</p>
+            <button class="btn-plus" id="bag-add">+</button>
           </div>
         </div>
       </div>
@@ -140,8 +139,8 @@
           <!-- product amount -->
           <div class="prod-amount">
             <button class="btn-minus">-</button>
-            <p id="shoe-amount" class="item-amount">1</p>
-            <button class="btn-plus">+</button>
+            <p id="shoe-amount" class="item-amount">0</p>
+            <button class="btn-plus" id="shoe-add">+</button>
           </div>
         </div>
       </div>
@@ -155,15 +154,14 @@
           </tr>
           <tr>
             <th>Total</th>
-            <th>$148.98</th>
+            <th id="total-price">$148.98</th>
           </tr>
         </table>
       </div>
-
     </div>
-
   </section>
 
+  <script src="main.js"></script>
 
 </body>
 
