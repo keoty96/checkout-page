@@ -16,7 +16,7 @@
 
   <!-- product and form section -->
   <section>
-    <form action="/">
+    <form action="mailto:example@gmail.com" method="POST" enctype="text/plain">
       <div class="form-cont">
         <!-- contact container -->
         <div class="contact-info">
@@ -118,7 +118,7 @@
           </div>
           <!-- product amount -->
           <div class="prod-amount">
-            <button class="btn-minus">-</button>
+            <button class="btn-minus" id="bag-sub">-</button>
             <p id="bag-amount" class="item-amount">0</p>
             <button class="btn-plus" id="bag-add">+</button>
           </div>
@@ -138,7 +138,7 @@
           </div>
           <!-- product amount -->
           <div class="prod-amount">
-            <button class="btn-minus">-</button>
+            <button class="btn-minus" id="shoe-sub">-</button>
             <p id="shoe-amount" class="item-amount">0</p>
             <button class="btn-plus" id="shoe-add">+</button>
           </div>
@@ -154,7 +154,7 @@
           </tr>
           <tr>
             <th>Total</th>
-            <th id="total-price">$148.98</th>
+            <th id="total-price">$0</th>
           </tr>
         </table>
       </div>
